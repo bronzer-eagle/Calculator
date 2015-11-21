@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    font-family: 'Open Sans', sans-serif;
+    background: #ffd248;
+    transition: background 5s ease-in-out;
+}
+
+.circle {
+    position: relative;
+    border-radius: 50%;
+    height: 0;
+    width: 0;
+    background: #18afe6;
+    box-shadow: 1px 1px 4px 1px #b58e38;
+    overflow: hidden;
+    transition: width .5s linear, height .5s linear;
+}
+
+.circle-scale {
+    position: relative;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    background: #18afe6;
+    box-shadow: 1px 1px 4px 1px #b58e38;
+    overflow: hidden;
+}
+
+#container {
+
+}
+
+#second-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -245px;
+    margin-top: -140px;
+    height: 280px;
+    width: 490px;
+    text-align: center;
+    display: none;
+}
+
+#height {
+
+}
+
+input {
+    min-width: 200px;
+    width: 400px;
+    max-width: 450px;
+    height: 25px;
+    font-size: 22px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    box-shadow: 6px 7px 1px 1px #188ac2;
+    color: #716f76;
+    transition: opacity 2s ease;
+    position: relative;
+    z-index: 2;
+}
+
+label {
+    font-size: 24px;
+    font-weight: bold;
+    transition: opacity 2s ease;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.attention {
+    color: #e6375f;
+}
+
+#ok-button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background: #1b1b77;
+    box-shadow: 0 0 1px 2px #0f8cba;
+    text-shadow: 3px 1px 5px #161655;
+    cursor: pointer;
+    transition: background 1s ease-in-out,
+    transform 1s ease;
+}
+
+#ok-button:hover {
+    background: #3043a4;
+}
+
+.transition-scale {
+    transform: scale(0.1, 0.1);
+}
+
+.transition-translate {
+    transform: scale(0.1, 0.1) translate(-380px, -380px);
+}
+
+#for-button {
+    left: 50%;
+    margin-left: -60px;
+    top: 220px;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transition: transform 1s ease-in-out;
+}
+
+.transition-rotate {
+    animation-name: rotate360;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+#percent {
+    top: 240px;
+    left: 50%;
+    margin-left: -40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #85a458;
+    color: #ffffff;
+    text-shadow: 3px 1px 5px #57743a;
+    font-size: 24px;
+    transition: background .5s ease,
+    width .5s ease, border-radius .5s ease, margin-left .5s ease;
+}
+
+.display-none {
+    display: none;
+}
+
+.opac {
+    opacity: 0;
+}
+
+.result {
+    position: absolute;
+    width: 220px;
+    height: 160px;
+    border-radius: 50%;
+    padding-top: 60px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #78ab38;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2;
+    top: 50%;
+    margin-top: -180px;
+    left: 50%;
+    margin-left: -110px;
+    box-shadow: 1px 1px 1px 2px #0f8cba;
+    background: #bdf544;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 5s ease /*, display 12s ease*/;
+    cursor: pointer;
+}
+
+.pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+
+}
+
+.opac2 {
+    /*display: block;*/
+    opacity: 1;
+}
+
+.table {
+    transition: border-radius 1s ease, width 1s ease;
+    border-radius: 0;
+    width: 400px;
+}
+
+#tb {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffffff;
+
+}
+
+td {
+    text-align: center;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+}
+
+
+
+
+
+
+
+

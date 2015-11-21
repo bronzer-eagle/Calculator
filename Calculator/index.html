@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Індекс маси тіла</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="container" class="circle">
+    <div id="second-container">
+        <label for="height">Введіть ваш зріст у <span class="attention">СМ</span></label>
+        <input id="height" type="text" placeholder="Ваш зріст" autocomplete="off">
+        <label for="weight">Введіть вашу вагу у <span class="attention">КГ</span></label>
+        <input id="weight" type="text" placeholder="Ваша вага" autocomplete="off"><br>
+        <div id="for-button">
+            <button id="ok-button" onclick="getData()">OK</button>
+        </div>
+        <div id="percent" class="display-none"></div>
+        <div id="results" class="result">
+        </div>
+    </div>
+</div>
+<script rel="script" src="js/main.js"></script>
+</body>
+</html>
